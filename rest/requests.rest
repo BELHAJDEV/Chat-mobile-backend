@@ -1,0 +1,20 @@
+###
+POST http://localhost:4000/api/messages
+content-type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzUyNmMwYWM2MmRjYzc3YzRlODE0M2YiLCJ1c2VybmFtZSI6ImNoYWZpayIsImlhdCI6MTY2NzEyNDgwMH0.aWzVMVAL8yU_wIK8ec3MniyHyTgVFDqIZgzxuyYfXv4
+
+{
+    "value" : "This is the first message",
+    "sender" : {
+        "_id" : "1",
+        "username" : "user1"
+    },
+    "receiver" : {
+        "_id" : "2",
+        "username" : "user2"
+    },
+}
+###
+GET http://localhost:4000/messages
+content-type: application/json
+# x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzUyNmMwYWM2MmRjYzc3YzRlODE0M2YiLCJ1c2VybmFtZSI6ImNoYWZpayIsImlhdCI6MTY2NzEyNDgwMH0.aWzVMVAL8yU_wIK8ec3MniyHyTgVFDqIZgzxuyYfXv4
